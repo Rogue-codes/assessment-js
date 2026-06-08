@@ -13,7 +13,19 @@ Q1. What are the three ways to declare a variable in JavaScript?
 Write a short example using each one.
 
 YOUR ANSWER:
+1.  var (Old way — avoid in modern code)
+javascript var name = "Bruno";
+console.log(name); // Bruno
 
+2.  let (Modern — use when value will change)
+javascriptlet age = 20;
+age = 21; // ✅ can be updated
+console.log(age); // 21
+
+3. const (Modern — use when value won't change)
+javascriptconst country = "Nigeria";
+country = "Ghana"; // ❌ Error! Cannot reassign a const
+console.log(country); // Nigeria
 
 
 
@@ -21,9 +33,9 @@ YOUR ANSWER:
 
 Q2. What will each line print? Fill in the blanks.
 
-  console.log(typeof 42);        // 
-  console.log(typeof "hello");   // 
-  console.log(typeof true);      // 
+  console.log(typeof 42);        // number
+  console.log(typeof "hello");   // String
+  console.log(typeof true);      // Boolean
 
 
 --------------------------------------------
@@ -34,7 +46,22 @@ Give one example that shows the difference.
 YOUR ANSWER:
 
 
+== (Loose Equality)
+Compares values only — it converts types before comparing (type coercion)
+javascript5 == "5"   // ✅ true — it converts "5" to a number first
 
+=== (Strict Equality)
+Compares value AND type — no conversion, must be exactly the same
+javascript5 === "5"  // ❌ false — number vs string, types don't match
+5 === 5    // ✅ true — same value, same type
+
+Example showing the difference:
+
+javascriptlet num = 5;
+let str = "5";
+
+console.log(num == str);   // true  ✅ (ignores type)
+console.log(num === str);  // false ❌ (checks type too)
 
 --------------------------------------------
 PART B — Conditionals
@@ -54,9 +81,14 @@ Q5. Given this code:
 What is the output?
 YOUR ANSWER:
 
+big
+
 
 Why did the else if branch NOT run even though x === 10 is true?
 YOUR ANSWER:
+Because if/else is a one-winner system — once one condition is true,
+ JavaScript runs that block and completely ignores the rest.
+
 
 
 
