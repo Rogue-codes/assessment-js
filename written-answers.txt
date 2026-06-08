@@ -1,0 +1,90 @@
+============================================
+JavaScript Assessment — Written Answers
+Fill in your answers below each question.
+Do NOT delete the question text.
+============================================
+
+
+--------------------------------------------
+PART A — Variables & Types
+--------------------------------------------
+
+Q1. What are the three ways to declare a variable in JavaScript?
+Write a short example using each one.
+
+YOUR ANSWER:
+
+
+
+
+--------------------------------------------
+
+Q2. What will each line print? Fill in the blanks.
+
+  console.log(typeof 42);        // 
+  console.log(typeof "hello");   // 
+  console.log(typeof true);      // 
+
+
+--------------------------------------------
+
+Q3. What is the difference between == and === in JavaScript?
+Give one example that shows the difference.
+
+YOUR ANSWER:
+
+
+
+
+--------------------------------------------
+PART B — Conditionals
+--------------------------------------------
+
+Q5. Given this code:
+
+  let x = 10;
+  if (x > 5) {
+    console.log("big");
+  } else if (x === 10) {
+    console.log("ten");
+  } else {
+    console.log("small");
+  }
+
+What is the output?
+YOUR ANSWER:
+
+
+Why did the else if branch NOT run even though x === 10 is true?
+YOUR ANSWER:
+
+
+
+
+--------------------------------------------
+PART D — Git Commands
+Write the exact commands you ran for each step.
+--------------------------------------------
+
+Step 1 — Clone the repo:
+$
+
+Step 2 — Confirm you're on main and pull:
+$
+
+Step 3 — Create and switch to your new branch:
+$
+
+Step 5 — Stage all changes and commit:
+$
+
+Step 6 — Push your branch:
+$
+
+
+--------------------------------------------
+Pull Request Link
+Paste your PR link here when done:
+--------------------------------------------
+
+PR:
